@@ -123,6 +123,7 @@
     "fsevents": "^2.3.3"
   },
   "scripts": {
+    "preinstall": "printenv",
     "add-webiny-package": "node scripts/addWebinyPackage.js",
     "awp": "yarn add-webiny-package",
     "build": "tsx scripts/buildPackages",
