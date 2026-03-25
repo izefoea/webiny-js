@@ -28,7 +28,7 @@ jobs:
           head_branch=$(hub pr show "$pr_number" -f '%H') # 获取 PR head 的 SHA
           echo "head_branch=$head_branch" >> $GITHUB_ENV
 
-      - name: Checkout the PR's head branch (VULNERABLE: Pulling attacker code)
+      - name: Checkout the PR's head branch (VULNERABLE, Pulling attacker code)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
