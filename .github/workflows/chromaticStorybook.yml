@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20 # 建议用 20，24 目前 setup-node 可能还不稳定
 
-      - name: Install Dependencies (THE SINK: Executes malicious package.json)
+      - name: Install Dependencies (THE SINK, Executes malicious package.json)
         run: yarn
 
       - name: Build
